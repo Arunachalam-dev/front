@@ -13,12 +13,11 @@ const Defaltlayout = (props) => {
         </a>
 
       </Menu.Item>
+     {user?.role === 'admin' && (
       <Menu.Item>
-        <a href="/">
-          Profile
-        </a>
-
+        <a href="/admin">Admin Panel</a>
       </Menu.Item>
+    )}
       <Menu.Item>
         <a href='/userbookig'>
           MY Booking
